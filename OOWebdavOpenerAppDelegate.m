@@ -73,7 +73,7 @@ withReplyEvent:(NSAppleEventDescriptor *)replyEvent
     
     [ws launchApplicationAtURL:bURL options:NSWorkspaceLaunchDefault configuration:dict error:nil];
     
-    sleep(5);
+    sleep(5); // to avoid appearing behind
     
     [NSApp terminate:self];
 }
